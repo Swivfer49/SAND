@@ -1,0 +1,129 @@
+<root>
+  <save-files>
+    <file id="0" name="example">
+      <Types></Types>
+      <New-Types></New-Types>
+      <Values></Values>
+      <New-Values></New-Values>
+      <Colors></Colors>
+    </file>
+  </save-files>
+  <nicknames>
+    <reference name="All/" type="include">,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,</reference>
+    <reference name="Metals/" type="include">,1,2,3,</reference>
+    <reference name="Logic/" type="include">,8,9,13,</reference>
+    <reference name="Lineair/" type="include">,0,16,</reference>
+    <reference name="Silicon/" type="include">,4,5,</reference>
+    <reference name="Distance/" type="include">,10,11,</reference>
+    <reference name="Air/" type="include">,0,</reference>
+    <reference name="Metal1/" type="include">,1,</reference>
+    <reference name="Metal2/" type="include">,2,</reference>
+    <reference name="Metal3/" type="include">,3,</reference>
+    <reference name="Switch/" type="include">,8,</reference>
+    <reference name="Toggle/" type="include">,9,</reference>
+    <reference name="Short/" type="include">,11,</reference>
+    <reference name="Long/" type="include">,10,</reference>
+    <reference name="P/" type="include">,5,</reference>
+    <reference name="N/" type="include">,4,</reference>
+    <reference name="Allwire/" type="include">,12,</reference>
+    <reference name="None/" type="exclude">,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,</reference>
+    <reference name="not:?:/" type="exclude">:?:</reference>
+  </nicknames>
+  <conditions>
+    <conduct-condition id="0">None/</conduct-condition>
+    <conduct-condition id="1">Metal1/,Logic/,</conduct-condition>
+    <conduct-condition id="2">Metal2/,N/,Logic/,</conduct-condition>
+    <conduct-condition id="3">Metal3/,P/,Logic/,</conduct-condition>
+    <conduct-condition id="4">Metal3/,N/,Distance/,Allwire/,15,</conduct-condition>
+    <conduct-condition id="5">Metal2/,P/,15,</conduct-condition>
+    <conduct-condition id="6">None/</conduct-condition>
+    <conduct-condition id="7">None/</conduct-condition>
+    <conduct-condition id="8">Metals/,Logic/,Distance/,Allwire,</conduct-condition>
+    <conduct-condition id="9">Metals/,Logic/,Distance/,Allwire,</conduct-condition>
+    <conduct-condition id="10">P/,Logic/,Long/,</conduct-condition>
+    <conduct-condition id="11">P/,Logic/,Short/,</conduct-condition>
+    <conduct-condition id="12">All/</conduct-condition>
+    <conduct-condition id="13">None/</conduct-condition>
+    <conduct-condition id="14">Silicon/,Logic/</conduct-condition>
+    <conduct-condition id="15">All/,not:15:/</conduct-condition>
+    <conduct-condition id="16">None/</conduct-condition>
+    <special>,10/d5,11/d2,0/d6,</special>
+  </conditions>
+  <toolbar button-size="60">
+    <button id="0" conditions="All/" to="0" r="0" g="0" b="0"></button>
+    <button id="1" conditions="Air/" to="1" r="128" g="128" b="128"></button>
+    <button id="2" conditions="Air/" to="2" r="200" g="200" b="200"></button>
+    <button id="3" conditions="Air/" to="3" r="100" g="100" b="100"></button>
+    <button id="4" conditions="Air/" to="5" r="128" g="0" b="0"></button>
+    <button id="5" conditions="Air/" to="4" r="0" g="0" b="128"></button>
+    <button id="6" conditions="Air/" to="6" r="0" g="128" b="0"></button>
+    <button id="7" conditions="Air/" to="7"  r="128" g="0" b="128"></button>
+    <button id="8" conditions="Air/" to="10" r="12" g="64" b="128"></button>
+    <button id="9" conditions="Air/" to="11" r="255" g="128" b="0"></button>
+    <button id="10" conditions="Air/" to="12" r="128" g="64" b="0"></button>
+    <button id="11" conditions="Air/" to="13" r="128" g="128" b="0"></button>
+    <button id="12" conditions="Air/" to="14" r="128" g="0" b="255"></button>
+    <button id="13" conditions="Air/" to="15" r="0" g="128" b="100"></button>
+    <button id="14" conditions="All/,not:0/" to="power" r="255" g="255" b="0"></button>
+  </toolbar>
+  <colors>
+    <c id="0" v="0">#000000</c>
+    <c id="0" v="10">#ffff00</c>
+    
+    <c id="1" v="5">#ffff00</c>
+    <c id="1" v="1">#404040</c>
+    <c id="1" v="0">#808080</c>
+    
+    <c id="2" v="5">#ffff00</c>
+    <c id="2" v="1">#646464</c>
+    <c id="2" v="0">#c8c8c8</c>
+    
+    <c id="3" v="5">#ffff00</c>
+    <c id="3" v="1">#c8c8c8</c>
+    <c id="3" v="0">#646464</c>
+    
+    <c id="4" v="5">#ffff00</c>
+    <c id="4" v="1">#0000ff</c>
+    <c id="4" v="0">#000080</c>
+    
+    <c id="5" v="5">#ffff00</c>
+    <c id="5" v="1">#ff0000</c>
+    <c id="5" v="0">#800000</c>
+
+    <c id="6" v="0">#008000</c>
+
+    <c id="7" v="0">#800080</c>
+
+    <c id="8" v="5">#ffff00</c>
+    <c id="8" v="0">#00ff00</c>
+
+    <c id="9" v="5">#ffff00</c>
+    <c id="9" v="0">#ff00ff</c>
+
+    <c id="10" v="5">#ffff00</c>
+    <c id="10" v="1">#c8c8c8</c>
+    <c id="10" v="0">#808080</c>
+
+    <c id="11" v="5">#ffff00</c>
+    <c id="11" v="1">#80ff00</c>
+    <c id="11" v="0">#ff8000</c>
+    
+    <c id="12" v="5">#ffff00</c>
+    <c id="12" v="1">#ff8000</c>
+    <c id="12" v="0">#804000</c>
+
+    <c id="13" v="5">#ffff00</c>
+    <c id="13" v="1">#404000</c>
+    <c id="13" v="0">#808000</c>
+
+    <c id="14" v="5">#ffff00</c>
+    <c id="14" v="1">#400080</c>
+    <c id="14" v="0">#8000ff</c>
+
+    <c id="15" v="5">#ffff00</c>
+    <c id="15" v="1">#00ffc8</c>
+    <c id="15" v="0">#008064</c>
+
+    <c id="16" v="0">#ffffff</c>
+  </colors>
+</root>
